@@ -337,6 +337,10 @@ class ARCFile(object):
 
 	    except Exception as e:
 		    print "Error in read_file_header: %s" % e
+            
+            length = 200 #fixing awkward heritrix error that says file header is 1300 in lenght and it causes
+                         # skipping a lot of urls until len of 1300+1300+1300+... matches with http:// line that is url
+
             self.file_headers = {"ip_address" : ip_address,
                                  "date" : datetime.datetime.strptime(date, "%Y%m%d%H%M%S"),
 				 "url": url,
