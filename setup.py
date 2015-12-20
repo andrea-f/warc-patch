@@ -9,11 +9,11 @@ try:
 except:
     pass
 
-setup(name='warc-patch',
-    version='.'.join(map(str, distmeta.__version__)),
-    author=distmeta.__author__,
-    author_email=distmeta.__contact__,
-    url=distmeta.__homepage__,
+setup(name='warcPatch',
+    version='0.2',
+    author="Andrea F",
+    author_email="information@dinx.tv",
+    url="http://www.walkabout.xyz",
     license='2-clause BSD',
     description=DESCRIPTION,
     long_description=LONG_DESCRIPTION,
